@@ -1,0 +1,115 @@
+body {
+    background-color: bisque;
+}
+
+/** container hissəsi */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/** banner hissəsi */
+.banner {
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.banner h2 {
+    color: white;
+}
+
+/** menu hissəsi */
+.menu {
+    width: 80%;
+    height: 80px;
+    background-color: brown;
+    margin-bottom: 5px;
+}
+
+.menu ul {
+    height: 80px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+}
+
+/** məlumatlar hissəsi */
+.məlumatlar {
+    width: 80%;
+    height: auto;
+    display: flex;
+}
+
+/** məqalə hissəsi */
+.məlumatlar .məqalə {
+    width: 80%;
+    background-color: teal;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.məlumatlar .məqalə p {
+    text-align: justify;
+    text-indent: 10px;
+}
+
+/** Yan - yana olan məqalə hissəsi */
+.məlumatlar .yan-yana {
+    display: flex;
+}
+
+.yan-yana p {
+    margin-right: 15px;
+}
+
+/** reklam hissəsi */
+.məlumatlar .reklam {
+    width: 20%;
+    height: auto;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reklam img {
+    height: 150px;
+}
+
+.reklam img:nth-child(2) {
+    order: 2;
+}
+
+/** footer hissəsi */
+.footer {
+    width: 80%;
+    height: 50px;
+    background-color: darkolivegreen;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+}
